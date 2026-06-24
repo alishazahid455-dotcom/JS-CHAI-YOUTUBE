@@ -12,3 +12,24 @@
       const myfun=function(){} ya function ki defination or usko variable myfun ma store ker diya
        non premitive types ka return type function hi atta or function ka function object atta*/
 
+       // stack(primitive datatype use stack) heap(non primitive)
+       //stack ma var ka copy milti heap ma reference
+       let myYouTubeName = "alisha";
+let anOtherName = myYouTubeName;
+
+anOtherName = "chaiorcode";
+
+console.log(anOtherName);
+console.log(myYouTubeName);
+
+let userOne = {
+    email: "alisha6",
+    upi: "jsd6"
+};
+
+let userTwo = userOne;
+
+userTwo.email = "jdkfg7";
+
+console.log(userOne.email);
+console.log(userTwo.email);
