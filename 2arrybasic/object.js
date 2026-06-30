@@ -35,3 +35,18 @@ console.log(jsUser.greetings());
 console.log(jsUser.greetingstwo());
 
 //inn dono ko run kerny k liya freeze waly console ko comment kerna pry ga
+
+
+
+
+
+
+/*Destructuring JavaScript ka ek feature hai jo array ya object se values ko nikal kar 
+variables mein store karne ka easy tareeqa deta hai.*/
+const course={
+    coursename:"js in hindi",
+    price:999,
+    courseinstructor:"alisha"
+}
+const {courseinstructor)=course //we can set name itself also} (destructuring)
+console.log(courseinstructor)
