@@ -36,3 +36,8 @@ const addtwo=(n1,n2)=> (n1+n2)
 const addtwo=(n1,n2)=> ({username:"alisha"})//iss object ko return krny k liya parenthesis likhny hi hs
 
 console.log(addtwo(3,4)) 
+//Arrow function ka apna this nahi hota.
+
+//Wo bahar wale scope ka this use karti hai.
+
+//Isliye object ke methods ke liye normal function use karna zyada common hai.
