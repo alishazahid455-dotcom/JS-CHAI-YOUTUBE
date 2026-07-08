@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Example</title>
+</head>
+<body>
+
+    <h1 id="heading">Hello Alisha</h1>
+
+    <button id="btn">Click Me</button>
+
+    <script>
+
+        // 1. Element ko select kiya
+        const heading = document.getElementById("heading");
+        const btn = document.getElementById("btn");
+
+        // 2. Button click event
+        btn.addEventListener("click", function () {
+
+            // 3. Text change
+            heading.innerText = "Welcome to JavaScript DOM!";
+
+            // 4. CSS change
+            heading.style.color = "blue";
+            heading.style.fontSize = "40px";
+
+            // 5. Naya paragraph create kiya
+            const para = document.createElement("p");
+
+            // 6. Paragraph ka text
+            para.innerText = "This paragraph is added by JavaScript.";
+
+            // 7. Body me add kar diya
+            document.body.appendChild(para);
+
+        });
+
+    </script>
+
+</body>
+</html>
